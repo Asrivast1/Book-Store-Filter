@@ -1,0 +1,39 @@
+body{
+    background-image:url('Assets/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+#buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.menuRow{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.menuItem{
+    align-items:center;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top:5%;
+    background-color:#191213;
+}
+.foodImg{
+    width:100%;
+
+}
+.info{
+    width:100%;
+    color:white;
+}
+#header{
+    margin:auto;
+    text-align: center;
+    color:white;
+    /* margin-top:-15%; */
+}
