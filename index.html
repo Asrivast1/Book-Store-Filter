@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+
+  <!--Bootstrap stylesheet-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!--CSS stylesheet-->
+  <link rel="stylesheet" href="restaurantcss.css">
+  
+  <title>Restaurant Menu</title>
+</head>
+<body>
+    <section id="main" class="fluid-container">
+        <div class="col-lg-6" id="header">
+            <h1>Pizzeria</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Placeat molestiae eius saepe animi tempora eveniet amet veritatis 
+                esse quae voluptas, aliquid in beatae.</p>
+            <div id="buttons">
+                    <button class="menuBtn" id="todayShelf">Today's Shelf</button>
+                    <button class="menuBtn" id="bestSellers">Best Sellers</button>
+                    <button class="menuBtn" id="newArrival">New Arrivals</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="container">
+        <div class="menuRow justify-content-around">
+            <div class="menuItem col-lg-5 todayShelf bestSellers" id="menuOne">
+                <div class="col-lg-4">
+                    <img src="Assets/pizza-chsaus.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-8">
+                    <h2>Chicken Sausage Pizza</h2>
+                    <p>220/-</p>
+                    <p class="category">Categories: Today's Shelf, Best Seller</p>
+                </div>
+            </div>
+            <div class="menuItem col-lg-5  todayShelf newArrival" id="menu1" >
+                <div class="col-lg-4">
+                    <img src="Assets/pizza-cap.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-8">
+                    <h2>Capsicum Pizza</h2>
+                    <p>190/-</p>
+                    <p class="category">Categories: Today's Shelf, New Arrival</p>
+                </div>
+            </div>
+        </div>
+        <div class="menuRow justify-content-around">
+            <div class="menuItem col-lg-5 todayShelf bestSellers" id="menu1">
+                <div class="col-lg-4">
+                    <img src="Assets/pizza-bacon.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-8">
+                    <h2>Bacon Pizza</h2>
+                    <p>320/-</p>
+                    <p class="category">Categories: Today's Special, Best Seller</p>
+                </div>
+            </div>
+            <div class="menuItem col-lg-5 todayShelf" id="menu1" >
+                <div class="col-lg-4">
+                    <img src="Assets/pizza-cheese.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-8">
+                    <h2>Margherita</h2>
+                    <p>149/-</p>
+                    <p class="category">Categories: Today's Shelf</p>
+                </div>
+            </div>
+        </div>
+        <div class="menuRow justify-content-around">
+            <div class="menuItem col-lg-5 todayShelf newArrival" id="menu1">
+                <div class="col-lg-4">
+                    <img src="Assets/pizza-corn.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-8">
+                    <h2>Onion Corn Pizza</h2>
+                    <p>200/-</p>
+                    <p class="category">Categories: Today's Shelf, New Arrival</p>
+                </div>
+            </div>
+            <div class="menuItem col-lg-5 todayShelf bestSellers" id="menu1" >
+                <div class="col-lg-4">
+                    <img src="Assets/pizza-feast.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-8">
+                    <h2>Veg Feast</h2>
+                    <p>280/-</p>
+                    <p class="category">Categories: Today's Shelf, Best Seller</p>
+                </div>
+            </div>
+        </div>
+        <div class="menuRow justify-content-around">
+            <div class="menuItem col-lg-5 todayShelf bestSellers" id="menu1">
+                <div class="col-lg-4">
+                    <img src="Assets/pizza-paneer.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-8">
+                    <h2>Paneer Pizza</h2>
+                    <p>229/-</p>
+                    <p class="category">Categories: Today's Shelf, Best Seller</p>
+                </div>
+            </div>
+            <div class="menuItem col-lg-5 todayShelf newArrival" id="menu1" >
+                <div class="col-lg-4">
+                    <img src="Assets/pizza-olive.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-8">
+                    <h2>Olive Pizza</h2>
+                    <p>200/-</p>
+                    <p class="category">Categories: Today's Shelf, New Arrival</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="restaurantjs.js"></script>
+</body>
+</html>
