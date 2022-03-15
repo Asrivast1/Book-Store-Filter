@@ -1,39 +1,139 @@
 body{
-    background-image:url('Assets/bg3.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-
+    overflow-x: hidden;
+    font-family:'Roboto';
+}
+.navbar-brand{
+    font-weight:500;
+    color:#142F43;
+}
+#navhr{
+    margin-top:-3%;
+    height:5px;
+    background-image:linear-gradient(to right, #FF5F7E, #FFAB4C);
 }
 
-#buttons{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+#profileIcon{
+    width:60%;
+}
+#main{
+    margin-top:5%;
+}
+.menuBtn{
+    border:none;
+    cursor: pointer;
+    color:#142F43;
+    font-size:1.5em;
+    font-weight:400;
+    display:inline;
+    margin-right:5%;
+}
+.menuBtn:hover{
+    color:rgb(182, 179, 179);
+}
+.menuBtn:focus{
+    color:rgb(182, 179, 179);
+}
+#abtSection{
+    margin-top:25%;
+}
+#abt{
+    text-align: center;
+}
+#abtHr{
+    width:50%;
+}
+#abtP{
+    text-align:center;
 }
 .menuRow{
     display:flex;
     flex-direction:row;
     flex-wrap: wrap;
+    justify-content:space-between;
 }
 .menuItem{
-    align-items:center;
+    width:24em;
     display:flex;
     flex-direction:row;
+    align-items: center;
     justify-content: space-around;
     margin-top:5%;
-    background-color:#191213;
+
 }
 .foodImg{
     width:100%;
-
+    border:2px solid #142F43;
+    padding:0.5em 0.5em;
+    border-radius:5px 5px 5px 5px;
+}
+.bookTitle{
+    font-size:1.2em;
+    font-weight:500;
+}
+.price{
+    margin-top:5%;
+    font-weight:500;
+    color:#FF5F7E;
+}
+.category{
+    font-size:0.8em;
+    font-weight:400;
 }
 .info{
-    width:100%;
-    color:white;
+    color:#142F43;
 }
-#header{
-    margin:auto;
-    text-align: center;
-    color:white;
-    /* margin-top:-15%; */
+
+#searchInput{
+    width:100%;
+    background-image: url('Assets/searchIcon.png');
+    background-repeat: no-repeat;
+    background-position:100% 50%;
+    border:none;
+
+    font-size:1em;
+    font-weight:400;
+
+}
+#searchInput:active{
+    outline: none !important;
+}
+#searchInput:focus{
+    outline: none !important;
+
+}
+hr{
+    background-color:#191213;
+}
+.addtocart{
+    color:#ffffff;
+    font-size:0.9em;
+    font-weight:400;
+    background-color:#142F43;
+    padding:0.5em 1em;
+    border-radius:20px 20px 20px 20px;
+
+  
+}
+.addtocart:hover{
+    text-decoration: none;
+    background-color: #FFAB4C;
+    color:#142F43;
+}
+
+
+@media screen and (max-width:414px){
+    .menuBtn{
+        font-size:1em;
+    }
+    #profileIcon{
+        width:10%;
+    }
+}
+@media screen and (min-width:760px){
+    .menuBtn{
+        font-size:1.3em;
+    }
+    #profileIcon{
+        width:60%;
+    }
 }
