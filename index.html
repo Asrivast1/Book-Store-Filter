@@ -4,122 +4,200 @@
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+  <link rel="icon" type="image/png" sizes="32x32" href="Assets/bookIcon.png">
 
   <!--Bootstrap stylesheet-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <!--CSS stylesheet-->
   <link rel="stylesheet" href="bookStorecss.css">
-  
-  <title>Restaurant Menu</title>
+  <!--Google Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>Online Book Store</title>
 </head>
 <body>
-    <section id="main" class="fluid-container">
-        <div class="col-lg-6" id="header">
-            <h1>Pizzeria</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Placeat molestiae eius saepe animi tempora eveniet amet veritatis 
-                esse quae voluptas, aliquid in beatae.</p>
-            <div id="buttons">
-                    <button class="menuBtn" id="todayShelf">Today's Shelf</button>
-                    <button class="menuBtn" id="bestSellers">Best Sellers</button>
-                    <button class="menuBtn" id="newArrival">New Arrivals</button>
+    <nav class="navbar navbar-expand-lg navbar-light fluid-container">
+        <a class="navbar-brand" href="#">Online Book Store <hr id="navhr"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="navbarIcon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Collections<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto" id="icons">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="Assets/cartIcon.png" alt="carticon" id="cartIcon"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img src="Assets/profile.png" alt="UserProfile" id="profileIcon"></a>
+              </li>
+            </ul>
+          </div>
+        
+      </nav>
+    <section id="main" class="row  container">
+    <div class="col-lg-3 col-md-4 " id="searchBar">
+        <form>
+            <input placeholder="Search a book..." type="text" value="" name="search" id="searchInput">
+            <hr>
+        </form>
+    </div>
+    <div id="menu" class="col-lg-9 col-md-8 container">
+        <div  id="header">
+            <h3 class="menuBtn" id="todayShelf" tabindex="1">Today's Shelf</h3>
+            <h3 class="menuBtn" id="bestSellers" tabindex="1">Best Sellers</h3>
+             <h3 class="menuBtn" id="newArrival" tabindex="1">New Arrivals</h3>
+        </div>
+        <div class="menuRow">
+            <div class="menuItem todayShelf bestSellers" id="menuOne">
+                <div class="col-lg-6">
+                    <img src="Assets/book1.jpg" class="foodImg">
+                </div>
+                <div class="col-lg-6 info">
+                    <h2 class="bookTitle">Our Country Friends</h2>
+                    <p class="category">Fiction, Satire</p>
+                    <p class="price">220/-</p>
+                    <a href="#" class="addtocart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="menuItem todayShelf newArrival" id="menu1" >
+                <div class="col-lg-6">
+                    <img src="Assets/book2.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-6">
+                    <h2 class="bookTitle">Her Name is Knight</h2>
+                    <p class="category">Thriller</p>
+                    <p class="price">190/-</p>
+                    <a href="#" class="addtocart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="menuItem todayShelf bestSellers" id="menu1">
+                <div class="col-lg-6">
+                    <img src="Assets/book3.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-6">
+                    <h2 class="bookTitle">The Sentence</h2>
+                    <p class="category">Fiction</p>
+                    <p class="price">320/-</p>
+                    <a href="#" class="addtocart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="menuItem todayShelf" id="menu1" >
+                <div class="col-lg-6">
+                    <img src="Assets/book4.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-6">
+                    <h2 class="bookTitle">O Beautiful</h2>
+                    <p class="category">Fiction</p>
+                    <p class="price">149/-</p>
+                    <a href="#" class="addtocart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="menuItem todayShelf newArrival" id="menu1">
+                <div class="col-lg-6">
+                    <img src="Assets/book5.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-6">
+                    <h2 class="bookTitle">Churchill's Shadow: The Life and Afterlife of Winston Churchill</h2>
+                    <p class="category">Biography</p>
+                    <p class="price">200/-</p>
+                    <a href="#" class="addtocart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="menuItem todayShelf bestSellers" id="menu1" >
+                <div class="col-lg-6">
+                    <img src="Assets/book6.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-6">
+                    <h2 class="bookTitle">The Collective</h2>
+                    <p class="category">Thriller, Mystery</p>
+                    <p class="price">280/-</p>
+                    <a href="#" class="addtocart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="menuItem todayShelf bestSellers" id="menu1">
+                <div class="col-lg-6">
+                    <img src="Assets/book7.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-6">
+                    <h2 class="bookTitle">A Net for Small Fishes</h2>
+                    <p class="category">Historical Fiction</p>
+                    <p class="price">229/-</p>
+                    <a href="#" class="addtocart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="menuItem todayShelf newArrival" id="menu1" >
+                <div class="col-lg-6">
+                    <img src="Assets/book8.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-6">
+                    <h2 class="bookTitle">Five Tuesdays in Winter</h2>
+                    <p class="category">Domestic Fiction</p>
+                    <p class="price">200/-</p>
+                    <a href="#" class="addtocart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="menuItem todayShelf bestSellers" id="menu1" >
+                <div class="col-lg-6">
+                    <img src="Assets/book9.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-6">
+                    <h2 class="bookTitle">Magnus Chase and the Gods of Asgard</h2>
+                    <p class="category">Fiction</p>
+                    <p class="price">190/-</p>
+                    <a href="#" class="addtocart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="menuItem todayShelf newArrival" id="menu1" >
+                <div class="col-lg-6">
+                    <img src="Assets/book10.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-6">
+                    <h2 class="bookTitle">The Teller of Secrets</h2>
+                    <p class="category">Coming of age</p>
+                    <p class="price">200/-</p>
+                    <a href="#" class="addtocart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="menuItem todayShelf newArrival" id="menu1" >
+                <div class="col-lg-6">
+                    <img src="Assets/book11.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-6">
+                    <h2 class="bookTitle">The Lincoln Highway</h2>
+                    <p class="category">Historical fiction, Coming of age</p>
+                    <p class="price">220/-</p>
+                    <a href="#" class="addtocart">Add to Cart</a>
+                </div>
+            </div>
+            <div class="menuItem todayShelf newArrival" id="menu1" >
+                <div class="col-lg-6">
+                    <img src="Assets/book12.jpg" class="foodImg">
+                </div>
+                <div class="info col-lg-6">
+                    <h2 class="bookTitle">The Judge's List</h2>
+                    <p class="category">Thriller, Mystery</p>
+                    <p class="price">200/-</p>
+                    <a href="#" class="addtocart">Add to Cart</a>
+                </div>
             </div>
         </div>
-    </section>
-
-    <section id="menu" class="container">
-        <div class="menuRow justify-content-around">
-            <div class="menuItem col-lg-5 todayShelf bestSellers" id="menuOne">
-                <div class="col-lg-4">
-                    <img src="Assets/pizza-chsaus.jpg" class="foodImg">
-                </div>
-                <div class="info col-lg-8">
-                    <h2>Chicken Sausage Pizza</h2>
-                    <p>220/-</p>
-                    <p class="category">Categories: Today's Shelf, Best Seller</p>
-                </div>
-            </div>
-            <div class="menuItem col-lg-5  todayShelf newArrival" id="menu1" >
-                <div class="col-lg-4">
-                    <img src="Assets/pizza-cap.jpg" class="foodImg">
-                </div>
-                <div class="info col-lg-8">
-                    <h2>Capsicum Pizza</h2>
-                    <p>190/-</p>
-                    <p class="category">Categories: Today's Shelf, New Arrival</p>
-                </div>
-            </div>
-        </div>
-        <div class="menuRow justify-content-around">
-            <div class="menuItem col-lg-5 todayShelf bestSellers" id="menu1">
-                <div class="col-lg-4">
-                    <img src="Assets/pizza-bacon.jpg" class="foodImg">
-                </div>
-                <div class="info col-lg-8">
-                    <h2>Bacon Pizza</h2>
-                    <p>320/-</p>
-                    <p class="category">Categories: Today's Special, Best Seller</p>
-                </div>
-            </div>
-            <div class="menuItem col-lg-5 todayShelf" id="menu1" >
-                <div class="col-lg-4">
-                    <img src="Assets/pizza-cheese.jpg" class="foodImg">
-                </div>
-                <div class="info col-lg-8">
-                    <h2>Margherita</h2>
-                    <p>149/-</p>
-                    <p class="category">Categories: Today's Shelf</p>
-                </div>
-            </div>
-        </div>
-        <div class="menuRow justify-content-around">
-            <div class="menuItem col-lg-5 todayShelf newArrival" id="menu1">
-                <div class="col-lg-4">
-                    <img src="Assets/pizza-corn.jpg" class="foodImg">
-                </div>
-                <div class="info col-lg-8">
-                    <h2>Onion Corn Pizza</h2>
-                    <p>200/-</p>
-                    <p class="category">Categories: Today's Shelf, New Arrival</p>
-                </div>
-            </div>
-            <div class="menuItem col-lg-5 todayShelf bestSellers" id="menu1" >
-                <div class="col-lg-4">
-                    <img src="Assets/pizza-feast.jpg" class="foodImg">
-                </div>
-                <div class="info col-lg-8">
-                    <h2>Veg Feast</h2>
-                    <p>280/-</p>
-                    <p class="category">Categories: Today's Shelf, Best Seller</p>
-                </div>
-            </div>
-        </div>
-        <div class="menuRow justify-content-around">
-            <div class="menuItem col-lg-5 todayShelf bestSellers" id="menu1">
-                <div class="col-lg-4">
-                    <img src="Assets/pizza-paneer.jpg" class="foodImg">
-                </div>
-                <div class="info col-lg-8">
-                    <h2>Paneer Pizza</h2>
-                    <p>229/-</p>
-                    <p class="category">Categories: Today's Shelf, Best Seller</p>
-                </div>
-            </div>
-            <div class="menuItem col-lg-5 todayShelf newArrival" id="menu1" >
-                <div class="col-lg-4">
-                    <img src="Assets/pizza-olive.jpg" class="foodImg">
-                </div>
-                <div class="info col-lg-8">
-                    <h2>Olive Pizza</h2>
-                    <p>200/-</p>
-                    <p class="category">Categories: Today's Shelf, New Arrival</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    </div>
+</section>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="bookStorejs.js"></script>
 </body>
 </html>
