@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+# Book Store Filter
 
-You can use the [editor on GitHub](https://github.com/Asrivast1/Book-Store-Filter/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+![Book store Filter Home Page](https://github.com/Asrivast1/Book-Store-Filter/assets/56469418/c04b3cf1-8024-4bc0-acf9-701b194cc0cb)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://github.com/Asrivast1/Book-Store-Filter/index.html) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+The Book Store Filter is a very simple online bookstore application that allows users to filter and search for books. It's built using HTML, CSS, and JavaScript.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Features
 
-```markdown
-Syntax highlighted code block
+- **Search Functionality**: Search for specific books by title, author, or keywords.
 
-# Header 1
-## Header 2
-### Header 3
+- **Responsive Design**: The application is designed to work well on various screen sizes, including mobile devices.
+- You can view the deployment of the project on Github Pages.
 
-- Bulleted
-- List
+## Usage
 
-1. Numbered
-2. List
+### Running the Application
 
-**Bold** and _Italic_ and `Code` text
+To run the Book Store Filter on your local machine, clone this repository:
 
-[Link](url) and ![Image](src)
+```bash
+git clone https://github.com/Asrivast1/Book-Store-Filter.git
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+Navigate to the project directory:
+```bash
+cd Book-Store-Filter
+```
 
-### Jekyll Themes
+Open the index.html file in your web browser.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Asrivast1/Book-Store-Filter/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+#### Do consider to star this project if you find it useful ⭐
